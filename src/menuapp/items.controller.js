@@ -9,7 +9,7 @@
 	ItemController.$inject=['items'];
 	function ItemController (items) {
 		// body... 
-		var $ctrl=this;
-		$ctrl.items=items;
+		var itemsCtrl=this;
+		itemsCtrl.items=items;
 	}
 })();

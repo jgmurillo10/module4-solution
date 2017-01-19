@@ -7,7 +7,7 @@
 	MenuDataService.$inject=['$http'];
 	function MenuDataService ($http) {
 		// body... 
-		service = this;
+		var service = this;
 
 		service.getAllCategories = function () {
 			return $http({
@@ -20,7 +20,8 @@
 			
 			return $http({
 				method: 'GET',
-				url: ('https://davids-restaurant.herokuapp.com/menu_items.json?category='+ categoryShortName)
+				url: 'https://davids-restaurant.herokuapp.com/menu_items.json',
+				params: {category: categoryShortName}
 			});
 			/* body... */
 

@@ -7,10 +7,10 @@
 	MenuAppController.$inject= ['categories'];
 	function MenuAppController (categories) {
 		// body... 
-		var $ctrl = this;
+		var categoriesCtrl = this;
 
-		console.log('shol')
-		$ctrl.categories=categories;
+		console.log('shol');
+		categoriesCtrl.categories=categories;
 		
 	}
 })();
