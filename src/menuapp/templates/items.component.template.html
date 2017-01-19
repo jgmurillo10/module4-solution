@@ -1,5 +1,20 @@
-<ul>
-	<li ng-repeat="item in $ctrl.items">
-		{{item.name}}
-	</li>
-</ul>
+<a ui-sref="categories" class="btn btn-default">Back</a>
+<table class="table">
+	
+	<thead>
+		<th>ID</th>
+		<th>Short Name</th>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Price Large</th>
+	</thead>
+	<tbody>
+		<tr ng-repeat="item in $ctrl.items">
+			<td>{{item.id}}</td>
+			<td>{{item.short_name}}</td>
+			<td>{{item.name}}</td>
+			<td>{{item.description}}</td>
+			<td>{{item.price_large}}</td>
+		</tr>
+	</tbody>
+</table>

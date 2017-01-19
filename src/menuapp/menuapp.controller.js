@@ -8,8 +8,7 @@
 	function MenuAppController (categories) {
 		// body... 
 		var categoriesCtrl = this;
-
-		console.log('shol');
+		console.log('hola')
 		categoriesCtrl.categories=categories;
 		
 	}
