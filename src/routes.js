@@ -23,7 +23,7 @@
 		.state('categories',{
 			url: '/categories',
 			templateUrl: 'src/menuapp/templates/categories.template.html',
-			controller: 'MenuAppController as menuController',
+			controller: 'MenuAppController as categoriesCtrl',
 			resolve: {
 				categories: ['MenuDataService', function  (MenuDataService) {
 					// body... 
@@ -37,7 +37,7 @@
 		.state('items', {
 			url: '/items/{categoryShortName}',
 			templateUrl: 'src/menuapp/templates/items.template.html',
-			controller: 'ItemController as itemController',
+			controller: 'ItemController as itemsCtrl',
 			resolve: {
 				items: ['$stateParams','MenuDataService', function ($stateParams, MenuDataService) {
 					/* body... */
